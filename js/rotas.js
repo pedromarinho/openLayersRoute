@@ -57,11 +57,16 @@ map.on('click', function(evt){
       return;
     }
     //get the route
-    var point1 = last_point.join();
-    var point2 = coord_street.join();
-    utils.json(url_osrm_route +point1+'&loc='+point2).when({
+    var point1 = '-7.233445,-35.914911';
+    var point2 = '-7.224132,-35.893678';
+
+    console.log("POINT 1 ", point1);
+
+    console.log("POINT 2 ", point2);
+    utils.json(url_osrm_route + point1+'&loc='+point2+'&instructions=true').when({
       ready: function(response){
         console.info(response);
+console.log(response);
 
         if(response.status != 200) {
           msg_el.innerHTML = response.status_message;
@@ -76,6 +81,14 @@ map.on('click', function(evt){
     });
   });
 });
+
+
+
+
+
+
+
+
 
 var utils = {
 	getNearest: function(coord){

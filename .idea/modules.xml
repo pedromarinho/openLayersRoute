@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rotas.iml" filepath="$PROJECT_DIR$/rotas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openLayersRoute.iml" filepath="$PROJECT_DIR$/openLayersRoute.iml" />
     </modules>
   </component>
 </project>
